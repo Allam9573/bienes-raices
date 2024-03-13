@@ -19,3 +19,4 @@ Route::get('/crear', [HomeController::class, 'crear'])->name('crear');
 Route::post('/registrar', [HomeController::class, 'registrarPropiedad'])->name('registrar');
 Route::get('/edit/{id}', [HomeController::class, 'editar'])->name('editar');
 Route::put('/update/{id}', [HomeController::class, 'actualizar'])->name('actualizar');
+Route::get('/eliminar/{id}', [HomeController::class, 'eliminar'])->name('eliminar');

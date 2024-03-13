@@ -36,7 +36,7 @@
                             <td> {{ $propiedad->tipoPropiedad }} </td>
                             <td>
                                 <a href="{{route('editar', $propiedad->codigoPropiedad)}}" class="btn btn-outline-primary rounded-pill">Editar</a>
-                                <a href="" class="btn btn-danger rounded-pill">Eliminar</a>
+                                <a href="{{route('eliminar', $propiedad->codigoPropiedad)}}" class="btn btn-danger rounded-pill">Eliminar</a>
                             </td>
                         </tr>
                     @endforeach

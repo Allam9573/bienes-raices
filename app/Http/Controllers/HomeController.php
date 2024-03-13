@@ -39,4 +39,9 @@ class HomeController extends Controller
         $propiedad->save();
         return redirect('/');
     }
+    public function eliminar($id){
+        $propiedad = PropiedadModel::find($id);
+        $propiedad->delete();
+        return redirect('/');
+    }
 }

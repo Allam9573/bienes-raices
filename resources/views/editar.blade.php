@@ -13,8 +13,8 @@
     <div class="row mt-5">
         <div class="col-4"></div>
         <div class="col-4 text-center">
-            <h2 class="mb-3">Editar Propiedad</h2>
-            <form action="{{route('actualizar', $propiedad->codigoPropiedad)}}" method="PUT">
+            <h2 class="mb-3">Editar Propiedad ({{$propiedad->tipoPropiedad}}) </h2>
+            <form action="{{route('actualizar', $propiedad->codigoPropiedad)}}" method="POST">
                 @csrf
                 @method('PUT')
                 <input type="text" name="color" placeholder="Color de propiedad" value="{{$propiedad->codigoPropiedad}}" id="" class="form-control rounded-pill mb-3" readonly  >

@@ -17,9 +17,9 @@
                 <h5 class="card-title">Nueva Propiedad</h5>
                 <form action="{{route('registrar')}}" method="POST">
                     @csrf
-                    <input type="text" placeholder="Color de propiedad" name="color" id="" class="form-control mb-3">
-                    <input type="text" placeholder="Area en metros" name="metros" id="" class="form-control mb-3">
-                    <input type="text" placeholder="Tipo de propiedad" name="tipoPropiedad" id="" class="form-control mb-3">
+                    <input type="text" placeholder="Color de propiedad" name="color" id="" class="form-control rounded-pill mb-3">
+                    <input type="text" placeholder="Area en metros" name="metros" id="" class="form-control rounded-pill mb-3">
+                    <input type="text" placeholder="Tipo de propiedad" name="tipoPropiedad" id="" class="form-control rounded-pill mb-3">
                     <input type="submit" class="btn btn-primary rounded-pill" value="Registrar">
                     <a href="{{ route('home') }}" class="ms-3">Atras</a>
                 </form>
